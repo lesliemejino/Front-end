@@ -1,0 +1,82 @@
+html * {
+	border: 1px solid black;
+	margin: 0; padding: 0;
+}
+
+html * * {
+	border: 1px solid red;
+}
+
+html * * * {
+	border: 1px solid blue;
+}
+
+html * * * * {
+	border: 1px solid yellow;
+}
+
+.clear {
+	clear: both;
+	border: none;
+}
+
+html, header {
+	border: none;
+}
+
+body {
+	margin: 0 auto;
+	padding: 10px;
+	width: 960px;
+}
+
+.logo {
+	float: left;
+	margin-right: 10px;
+}
+
+.head-nav {
+	padding: 10px;
+	width: 938px;
+	height: 50px;
+	margin-bottom: 10px;
+	float: left;
+}
+
+.main {
+	width: 938px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.main-left {
+	float: left;
+	margin-right: 10px;
+}
+
+.main-right {
+	float: left;
+	background-color: red;
+	height: 100px;
+	width: 318px;
+	padding: 10px;
+}
+
+.post {
+	width: 584px;
+	height: 10px;
+	background-color: red;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.post:last-child {
+	margin: 0;
+}
+
+.main-footer {
+	margin-top: 10px;
+	padding: 10px;
+	width: 938px;
+	height: 30px;
+}
