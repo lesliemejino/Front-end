@@ -1,0 +1,125 @@
+body {
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#deeded), to(#fff));
+   	background-image: -webkit-linear-gradient(top, #deeded, #fff);
+   	background-image:    -moz-linear-gradient(top, #deeded, #fff);
+   	background-image:     -ms-linear-gradient(top, #deeded, #fff);
+   	background-image:      -o-linear-gradient(top, #deeded, #fff);
+}
+
+* {
+	text-shadow: 0px 1px 0px white;
+	font-family: Helvetica;
+}
+
+p {
+	border: 1px dashed #333;
+	border-radius: 5px 10px 20px 40px;
+	padding: 5px 10px 20px 40px;
+}
+
+p:nth-child(2n) {
+	border: 1px solid red;
+	-webkit-box-shadow: 0px 2px 5px black;
+	-moz-box-shadow: 0px 2px 5px black;
+	box-shadow: 0px 2px 5px black;
+	
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+p:nth-child(2n):hover {
+	background-color: white;
+}
+
+a {
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	
+	color: black;
+}
+
+a:hover {
+	color: #aa0000;
+	font-size: 200%;
+}
+
+h1, h2, h3 {
+	-moz-transform: rotate(5deg);
+	-moz-transform-origin: 0% 0%;
+	-webkit-transform: rotate(5deg);
+	-webkit-transform-origin: 0% 0%;
+	-ms-transform: rotate(5deg);
+	-ms-transform-origin: 0% 0%;
+	-o-transform: rotate(5deg);
+	-o-transform-origin: 0% 0%;
+	transform: rotate(5deg);
+	transform-origin: 0% 0%;
+	margin-bottom: 30px;
+}
+
+h1:hover, h2:hover, h3:hover {
+	-ms-animation: headingHover infinite 1s;
+	-o-animation: headingHover infinite 1s;
+	-moz-animation: headingHover infinite 1s;
+	-webkit-animation: headingHover infinite 1s;
+	animation: headingHover infinite 1s;
+}
+
+input:focus {
+	-webkit-animation: inputFocus infinite 1s;
+	animation: inputFocus infinite 1s;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea {
+	border-radius: 5px;
+	padding: 5px;
+}
+
+/*
+*
+*	!ANIMATION DEFENITIONS GO HERE
+*
+*/
+
+@-webkit-keyframes inputFocus {
+	0%, 100% {
+		background-color: blue;
+	}
+	
+	50% {
+		background-color: olive;
+	}
+}
+@keyframes inputFocus {
+	0%, 100% {
+		background-color: blue;
+	}
+	
+	50% {
+		background-color: olive;
+	}
+}
+
+@-webkit-keyframes headingHover {
+	0%, 100% {
+		text-shadow: 0px 0px 0px red;
+	}
+	
+	50% {
+		text-shadow: 0px 0px 50px blue;
+	}
+}
+
+@keyframes headingHover {
+	0%, 100% {
+		text-shadow: 0px 0px 0px red;
+	}
+	
+	50% {
+		text-shadow: 0px 0px 50px blue;
+	}
+}
