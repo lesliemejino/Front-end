@@ -1,0 +1,16 @@
+body {
+	font: normal 100% Cambria, Georgia, serif;
+	background-color: #eee;
+	color: #222;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h1 a {
+	font-size: 0.4166666667em;
+	text-transform: uppercase;
+	color: #333;
+	text-decoration: none;
+}

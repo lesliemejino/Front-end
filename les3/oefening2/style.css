@@ -1,0 +1,49 @@
+/*
+
+Layout scheme:
+|--------------------960px------------------------|
+|-30px-|-------------900px-----------------|-30px-|
+|------|-------566px-------|3px|---331px---|------|
+
+*/
+
+html {
+	font-size: 10px;
+}
+
+section {
+	padding: 3em;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid red;
+}
+
+section:first-of-type {
+	width: 960px;
+	margin: 0 auto;
+	
+}
+
+section section:first-child {
+	width: 900px;
+}
+
+section section:nth-child(2) {
+	width: 900px;
+	overflow: hidden;
+}
+
+section section article {
+	float: left;
+	width: 566px;
+	position: relative;
+	background-color: red;
+}
+
+.sidebar {
+	float: left;
+	position: relative;
+	width: 100px;
+	/*margin-left: 0.33333333334em;*/
+	background-color: blue;
+}

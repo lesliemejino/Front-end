@@ -94,6 +94,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="date"], 
 		background-color: olive;
 	}
 }
+
 @keyframes inputFocus {
 	0%, 100% {
 		background-color: blue;
